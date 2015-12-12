@@ -1155,6 +1155,11 @@ Modal Window
   transition: opacity 0.3s 0s, visibility 0s 0s;
 }
 
+.temp-css {
+  width: 100% !important;
+  text-align: center !important;
+}
+
 /**************** Landing Page Modification CSS - Added by Swapnil ********************/
 /**************** Landing Page Modification CSS - Added by Swapnil ********************/
 
