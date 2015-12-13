@@ -24,6 +24,7 @@
     			}
     		}
 
+            
     		$scope.rejectLoan = function(ev) {
 	            $mdDialog.show({
 	                controller: marketPlaceCtrl,

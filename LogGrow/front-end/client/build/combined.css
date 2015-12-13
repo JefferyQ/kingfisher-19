@@ -8899,9 +8899,9 @@ button.close {
 }
 
 .page-header-lg {
-  font-size: 25px;
+  font-size: 20px;
   line-height: 40px;
-  color: #009688;
+  color: #607D8B;
   margin: 0 0;
   text-align: center;
   font-weight: 600;
@@ -8934,6 +8934,10 @@ button.close {
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5;
+}
+
+.text-center {
+  text-align:center;
 }
 
 /************ md-sidenav property ***********************/
@@ -8969,6 +8973,93 @@ button.close {
   max-height: 100% !important;
   height:100% !important;
   background: #ffffff !important;opacity:1;
+}
+
+.overlay-filter-info{
+  position: absolute;
+  top: 0px;
+  z-index: 4;
+  left:0px !important;
+  background-color: #ffffff;
+  width: 0%;
+  max-height: 100% !important;
+  height:100% !important;
+  background: #ffffff !important;opacity:1;
+}
+
+.slide-in-left {
+    transition:0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    left:25%;
+    min-width:25%;
+  }
+.slide-out-left {
+    transition:0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    left:0%;  
+    min-width:0%;
+  }
+
+.filter-marketplace {
+  background: #ffffff;
+  padding:10px;
+}
+
+.fl-left {
+  float: left;
+}
+
+.filter-title {
+  font-size: 16px;
+  color: #848282;
+  cursor: pointer;
+}
+
+.select_style 
+{
+  background: #FFF;
+  overflow: hidden;
+  display: inline-block;
+  color: #525252;
+  font-weight: 300;
+  -webkit-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+  -moz-border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+  border-radius: 5px 4px 4px 5px/5px 5px 4px 4px;
+  -webkit-box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+  -moz-box-shadow: 0 0 5px rgba(123,123,123,.2);
+  box-shadow: 0 0 5px rgba(123, 123, 123, 0.2);
+  border: solid 1px #DADADA;
+  position: relative;
+  cursor: pointer;
+  padding-right:20px;
+
+}
+.select_style span
+{
+  position: absolute;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  background: url(http://projects.authenticstyle.co.uk/niceselect/arrow.png) no-repeat;
+  top: 50%;
+  margin-top: -4px;
+}
+.select_style select
+{
+  -webkit-appearance: none;
+  appearance:none;
+  width:120%;
+  background:none;
+  background:transparent;
+  border:none;
+  outline:none;
+  cursor:pointer;
+  padding:5px 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0,0,0,0.7);
 }
 
 /************ slide-in slide-out page *******************/

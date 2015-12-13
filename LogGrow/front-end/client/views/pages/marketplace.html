@@ -1,14 +1,54 @@
 <section class="page font-openSans" ng-class="{'width-50':flag.cardDetail==true, 'width-100':flag.cardDetail==false}">
     <h4 class="page-header-lg">Market Place</h4>
+    
+    <div class="text-center">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <form class="form-inline" role="form">
+                        <div class="form-group select_style">
+                            <select>
+                                <option>Type</option>
+                            </select>
+                            <span></span>
+                        </div>
+                        <div class="form-group select_style">
+                            <select>
+                                <option>Tenure</option>
+                            </select>
+                            <span></span>
+                        </div>
+                        <div class="form-group select_style">
+                            <select>
+                                <option>Rate</option>
+                            </select>
+                            <span></span>
+                        </div>
+                        <div class="form-group select_style">
+                            <select>
+                                <option>Purpose</option>
+                            </select>
+                            <span></span>
+                        </div>
+                        <div class="checkbox">
+                        </div>
+                        <!-- <button class="btn btn-primary" type="button" data-toggle="dropdown">Apply</button> -->
+                    </form>     
+
+                </div>
+            </div>
+    </div>
+    <div class="text-center " ng-class="{'width-50':flag.cardDetail==true, 'width-100':flag.cardDetail==false}">
+    </div>
     <div class="row ui-section">
         <div ng-class="{'col-md-12':flag.cardDetail==true, 'col-md-4':flag.cardDetail==false}">
-            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlex();">
+            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlex();flag.filterDetail = true;">
                 <md-card-header>
                   <md-card-avatar>
                     <img class="md-user-avatar" src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg"/>
                   </md-card-avatar>
                   <md-card-header-text>
-                    <span class="md-title">Swapnil Saurav <span class="card-rating"><i class="ui-rating-success glyphicon glyphicon-star"></i> 4.5</span></span> 
+                    <span class="md-title">Swapnil Saurav<span class="card-rating"><i class="ui-rating-success glyphicon glyphicon-star"></i> 4.5</span></span> 
                     <span class="md-subhead"><i class="fa fa-map-marker" tooltip-placement="bottom" uib-tooltip="Location" tooltip-append-to-body="true"></i> Bangalore</span>
                     <span class="space"></span>
                     <span class="md-subhead"><i class="fa fa-briefcase" tooltip-placement="bottom" uib-tooltip="Job" tooltip-append-to-body="true"></i> Software Developer</span>
@@ -274,7 +314,7 @@
     </div> 
     
 </section>
-<div ng-class="{'slide-in':flag.cardDetail==true, 'slide-out':flag.cardDetail==false}" class="md-whiteframe-z5 overlay-card-info"> 
+<div ng-class="{'slide-in':flag.cardDetail==true, 'slide-out':flag.cardDetail==false}" class="md-whiteframe-z1 overlay-card-info"> 
         <md-button ng-click='show=!show'>asas12 asasasasas</md-button>
-    </div> 
+</div> 
 
