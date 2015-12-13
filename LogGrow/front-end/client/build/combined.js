@@ -2519,14 +2519,14 @@
     		$scope.fields = {};
     		$scope.fields.sectionFlex = 100;
 
-    		$scope.changeFlex = function(){
-    			$scope.flag.cardDetail = !$scope.flag.cardDetail;
-
-    			if($scope.flag.cardDetail == true) {
-    				$scope.fields.sectionFlex = 50;
-    			} else {
-    				$scope.fields.sectionFlex = 100
-    			}
+    		$scope.changeFlexCard = function(arg){
+                if(arg =='open'){
+    			    $scope.flag.cardDetail = true;
+                    $scope.fields.sectionFlex = 50;
+                } else if (arg == 'close'){
+                    $scope.flag.cardDetail = false;
+                    $scope.fields.sectionFlex = 100;
+                }
     		}
 
             
