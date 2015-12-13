@@ -1,0 +1,58 @@
+<header class="top-header clearfix font-ptSans">
+    <div ui-preloader></div>
+
+    <!-- Logo -->
+    <div class="logo"
+         ng-class="{ 'bg-dark': ['11','31'].indexOf(main.skin) >= 0,
+                     'bg-white': main.skin === '21',
+                     'bg-primary': ['12','22','32'].indexOf(main.skin) >= 0,
+                     'bg-success': ['13','23','33'].indexOf(main.skin) >= 0,
+                     'bg-info': ['14','24','34'].indexOf(main.skin) >= 0,
+                     'bg-warning': ['15','25','35'].indexOf(main.skin) >= 0,
+                     'bg-danger': ['16','26','36'].indexOf(main.skin) >= 0 }">
+        <a href="#/">
+            <span class="logo-icon zmdi zmdi-view-dashboard"></span>
+            <span class="logo-text">{{main.brand}}</span>
+        </a>
+    </div>
+
+    <!-- needs to be put after logo to make it work -->
+
+    <div class="top-nav">
+
+        <ul class="nav-right pull-right list-unstyled">
+            <li class="text-normal">
+                <button class="btn header-btn">Apply for Loan</button>
+            </li>
+            <li class="text-normal">
+                <a> MARKETPLACE </a>
+            </li>
+            <li class="text-normal">
+                <a> STATS </a>
+            </li>
+            <li class="dropdown text-normal nav-profile"    uib-dropdown is-open="status.isopenProfile">
+                <a href="javascript:;" class="dropdown-toggle" uib-dropdown-toggle ng-disabled="disabled" md-button aria-label="email" aria-label="profile">
+                    <img src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg" alt="" class="img-circle img30_30">
+                    <span class="hidden-xs">
+                        <span data-translate="Swapnil"></span>
+                        <i class="fa fa-angle-down"></i>
+                    </span>
+                </a>
+                <ul class="uib-dropdown-menu with-arrow pull-right dropdown-menu-scaleIn">
+                    <li>
+                        <a href="#/page/profile">
+                            <i class="zmdi zmdi-account"></i>
+                            <span data-translate="MY_PROFILE"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#/page/signin">
+                            <i class="zmdi zmdi-forward"></i>
+                            <span data-translate="LOG_OUT"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</header>

@@ -1,0 +1,280 @@
+<section class="page font-openSans" ng-class="{'width-50':flag.cardDetail==true, 'width-100':flag.cardDetail==false}">
+    <h4 class="page-header-lg">Market Place</h4>
+    <div class="row ui-section">
+        <div ng-class="{'col-md-12':flag.cardDetail==true, 'col-md-4':flag.cardDetail==false}">
+            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlex();">
+                <md-card-header>
+                  <md-card-avatar>
+                    <img class="md-user-avatar" src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg"/>
+                  </md-card-avatar>
+                  <md-card-header-text>
+                    <span class="md-title">Swapnil Saurav <span class="card-rating"><i class="ui-rating-success glyphicon glyphicon-star"></i> 4.5</span></span> 
+                    <span class="md-subhead"><i class="fa fa-map-marker" tooltip-placement="bottom" uib-tooltip="Location" tooltip-append-to-body="true"></i> Bangalore</span>
+                    <span class="space"></span>
+                    <span class="md-subhead"><i class="fa fa-briefcase" tooltip-placement="bottom" uib-tooltip="Job" tooltip-append-to-body="true"></i> Software Developer</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-card-content>
+                  <div class="table-responsive">
+            <table class="table table-striped table-bordered no-margin">
+                <tbody>
+                <tr>
+                    <td class="marketplace-td">Loan Amount</td>
+                    <td class="marketplace-td"><i class="fa fa-inr"></i> 2,00,000</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Interest</td>
+                    <td class="marketplace-td">6 %</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Tenure</td>
+                    <td class="marketplace-td">15 months</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Purpose</td>
+                    <td class="marketplace-td">Family</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end start" class="padding-card-action">
+                    <button type="button" class="btn btn-danger btn-circle margin-card-action action-circle-button-reject" tooltip-placement="bottom" uib-tooltip="Reject Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();rejectLoan($event)"><i class="glyphicon glyphicon-remove"></i></button>
+                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-info" tooltip-placement="bottom" uib-tooltip="Infomation" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-info"></i></button>
+                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-bookmark" tooltip-placement="bottom" uib-tooltip="Bookmark" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-bookmark"></i></button>
+                    <button type="button" class="btn btn-success btn-circle action-circle-button-success" tooltip-placement="bottom" uib-tooltip="Accept Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="glyphicon glyphicon-ok"></i></button>
+                </md-card-actions>
+            </md-card>
+        </div>
+        <div ng-class="{'col-md-12':flag.cardDetail==true, 'col-md-4':flag.cardDetail==false}">
+            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlex();">
+                <md-card-header>
+                  <md-card-avatar>
+                    <img class="md-user-avatar" src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg"/>
+                  </md-card-avatar>
+                  <md-card-header-text>
+                    <span class="md-title">Swapnil Saurav <span class="card-rating"><i class="ui-rating-success glyphicon glyphicon-star"></i> 4.5</span></span> 
+                    <span class="md-subhead"><i class="fa fa-map-marker" tooltip-placement="bottom" uib-tooltip="Location" tooltip-append-to-body="true"></i> Bangalore</span>
+                    <span class="space"></span>
+                    <span class="md-subhead"><i class="fa fa-briefcase" tooltip-placement="bottom" uib-tooltip="Job" tooltip-append-to-body="true"></i> Software Developer</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-card-content>
+                  <div class="table-responsive">
+            <table class="table table-striped table-bordered no-margin">
+                <tbody>
+                <tr>
+                    <td class="marketplace-td">Loan Amount</td>
+                    <td class="marketplace-td"><i class="fa fa-inr"></i> 2,00,000</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Interest</td>
+                    <td class="marketplace-td">6 %</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Tenure</td>
+                    <td class="marketplace-td">15 months</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Purpose</td>
+                    <td class="marketplace-td">Family</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end start" class="padding-card-action">
+                    <button type="button" class="btn btn-danger btn-circle margin-card-action action-circle-button-reject" tooltip-placement="bottom" uib-tooltip="Reject Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();rejectLoan($event)"><i class="glyphicon glyphicon-remove"></i></button>
+                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-info" tooltip-placement="bottom" uib-tooltip="Infomation" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-info"></i></button>
+                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-bookmark" tooltip-placement="bottom" uib-tooltip="Bookmark" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-bookmark"></i></button>
+                    <button type="button" class="btn btn-success btn-circle action-circle-button-success" tooltip-placement="bottom" uib-tooltip="Accept Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="glyphicon glyphicon-ok"></i></button>
+                </md-card-actions>
+            </md-card>
+        </div>
+        <div ng-class="{'col-md-12':flag.cardDetail==true, 'col-md-4':flag.cardDetail==false}">
+            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlex();">
+                <md-card-header>
+                  <md-card-avatar>
+                    <img class="md-user-avatar" src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg"/>
+                  </md-card-avatar>
+                  <md-card-header-text>
+                    <span class="md-title">Swapnil Saurav <span class="card-rating"><i class="ui-rating-success glyphicon glyphicon-star"></i> 4.5</span></span> 
+                    <span class="md-subhead"><i class="fa fa-map-marker" tooltip-placement="bottom" uib-tooltip="Location" tooltip-append-to-body="true"></i> Bangalore</span>
+                    <span class="space"></span>
+                    <span class="md-subhead"><i class="fa fa-briefcase" tooltip-placement="bottom" uib-tooltip="Job" tooltip-append-to-body="true"></i> Software Developer</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-card-content>
+                  <div class="table-responsive">
+            <table class="table table-striped table-bordered no-margin">
+                <tbody>
+                <tr>
+                    <td class="marketplace-td">Loan Amount</td>
+                    <td class="marketplace-td"><i class="fa fa-inr"></i> 2,00,000</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Interest</td>
+                    <td class="marketplace-td">6 %</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Tenure</td>
+                    <td class="marketplace-td">15 months</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Purpose</td>
+                    <td class="marketplace-td">Family</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end start" class="padding-card-action">
+                    <button type="button" class="btn btn-danger btn-circle margin-card-action action-circle-button-reject" tooltip-placement="bottom" uib-tooltip="Reject Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();rejectLoan($event)"><i class="glyphicon glyphicon-remove"></i></button>
+                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-info" tooltip-placement="bottom" uib-tooltip="Infomation" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-info"></i></button>
+                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-bookmark" tooltip-placement="bottom" uib-tooltip="Bookmark" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-bookmark"></i></button>
+                    <button type="button" class="btn btn-success btn-circle action-circle-button-success" tooltip-placement="bottom" uib-tooltip="Accept Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="glyphicon glyphicon-ok"></i></button>
+                </md-card-actions>
+            </md-card>
+        </div>
+        <div ng-class="{'col-md-12':flag.cardDetail==true, 'col-md-4':flag.cardDetail==false}">
+            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlex();">
+                <md-card-header>
+                  <md-card-avatar>
+                    <img class="md-user-avatar" src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg"/>
+                  </md-card-avatar>
+                  <md-card-header-text>
+                    <span class="md-title">Swapnil Saurav <span class="card-rating"><i class="ui-rating-success glyphicon glyphicon-star"></i> 4.5</span></span> 
+                    <span class="md-subhead"><i class="fa fa-map-marker" tooltip-placement="bottom" uib-tooltip="Location" tooltip-append-to-body="true"></i> Bangalore</span>
+                    <span class="space"></span>
+                    <span class="md-subhead"><i class="fa fa-briefcase" tooltip-placement="bottom" uib-tooltip="Job" tooltip-append-to-body="true"></i> Software Developer</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-card-content>
+                  <div class="table-responsive">
+            <table class="table table-striped table-bordered no-margin">
+                <tbody>
+                <tr>
+                    <td class="marketplace-td">Loan Amount</td>
+                    <td class="marketplace-td"><i class="fa fa-inr"></i> 2,00,000</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Interest</td>
+                    <td class="marketplace-td">6 %</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Tenure</td>
+                    <td class="marketplace-td">15 months</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Purpose</td>
+                    <td class="marketplace-td">Family</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end start" class="padding-card-action">
+                    <button type="button" class="btn btn-danger btn-circle margin-card-action action-circle-button-reject" tooltip-placement="bottom" uib-tooltip="Reject Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();rejectLoan($event)"><i class="glyphicon glyphicon-remove"></i></button>
+                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-info" tooltip-placement="bottom" uib-tooltip="Infomation" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-info"></i></button>
+                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-bookmark" tooltip-placement="bottom" uib-tooltip="Bookmark" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-bookmark"></i></button>
+                    <button type="button" class="btn btn-success btn-circle action-circle-button-success" tooltip-placement="bottom" uib-tooltip="Accept Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="glyphicon glyphicon-ok"></i></button>
+                </md-card-actions>
+            </md-card>
+        </div>
+        <div ng-class="{'col-md-12':flag.cardDetail==true, 'col-md-4':flag.cardDetail==false}">
+            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlex();">
+                <md-card-header>
+                  <md-card-avatar>
+                    <img class="md-user-avatar" src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg"/>
+                  </md-card-avatar>
+                  <md-card-header-text>
+                    <span class="md-title">Swapnil Saurav <span class="card-rating"><i class="ui-rating-success glyphicon glyphicon-star"></i> 4.5</span></span> 
+                    <span class="md-subhead"><i class="fa fa-map-marker" tooltip-placement="bottom" uib-tooltip="Location" tooltip-append-to-body="true"></i> Bangalore</span>
+                    <span class="space"></span>
+                    <span class="md-subhead"><i class="fa fa-briefcase" tooltip-placement="bottom" uib-tooltip="Job" tooltip-append-to-body="true"></i> Software Developer</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-card-content>
+                  <div class="table-responsive">
+            <table class="table table-striped table-bordered no-margin">
+                <tbody>
+                <tr>
+                    <td class="marketplace-td">Loan Amount</td>
+                    <td class="marketplace-td"><i class="fa fa-inr"></i> 2,00,000</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Interest</td>
+                    <td class="marketplace-td">6 %</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Tenure</td>
+                    <td class="marketplace-td">15 months</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Purpose</td>
+                    <td class="marketplace-td">Family</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end start" class="padding-card-action">
+                    <button type="button" class="btn btn-danger btn-circle margin-card-action action-circle-button-reject" tooltip-placement="bottom" uib-tooltip="Reject Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();rejectLoan($event)"><i class="glyphicon glyphicon-remove"></i></button>
+                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-info" tooltip-placement="bottom" uib-tooltip="Infomation" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-info"></i></button>
+                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-bookmark" tooltip-placement="bottom" uib-tooltip="Bookmark" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-bookmark"></i></button>
+                    <button type="button" class="btn btn-success btn-circle action-circle-button-success" tooltip-placement="bottom" uib-tooltip="Accept Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="glyphicon glyphicon-ok"></i></button>
+                </md-card-actions>
+            </md-card>
+        </div>
+        <div ng-class="{'col-md-12':flag.cardDetail==true, 'col-md-4':flag.cardDetail==false}">
+            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlex();">
+                <md-card-header>
+                  <md-card-avatar>
+                    <img class="md-user-avatar" src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg"/>
+                  </md-card-avatar>
+                  <md-card-header-text>
+                    <span class="md-title">Swapnil Saurav <span class="card-rating"><i class="ui-rating-success glyphicon glyphicon-star"></i> 4.5</span></span> 
+                    <span class="md-subhead"><i class="fa fa-map-marker" tooltip-placement="bottom" uib-tooltip="Location" tooltip-append-to-body="true"></i> Bangalore</span>
+                    <span class="space"></span>
+                    <span class="md-subhead"><i class="fa fa-briefcase" tooltip-placement="bottom" uib-tooltip="Job" tooltip-append-to-body="true"></i> Software Developer</span>
+                  </md-card-header-text>
+                </md-card-header>
+                <md-card-content>
+                  <div class="table-responsive">
+            <table class="table table-striped table-bordered no-margin">
+                <tbody>
+                <tr>
+                    <td class="marketplace-td">Loan Amount</td>
+                    <td class="marketplace-td"><i class="fa fa-inr"></i> 2,00,000</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Interest</td>
+                    <td class="marketplace-td">6 %</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Tenure</td>
+                    <td class="marketplace-td">15 months</td>
+                </tr>
+                <tr>
+                    <td class="marketplace-td">Purpose</td>
+                    <td class="marketplace-td">Family</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end start" class="padding-card-action">
+                    <button type="button" class="btn btn-danger btn-circle margin-card-action action-circle-button-reject" tooltip-placement="bottom" uib-tooltip="Reject Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();rejectLoan($event)"><i class="glyphicon glyphicon-remove"></i></button>
+                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-info" tooltip-placement="bottom" uib-tooltip="Infomation" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-info"></i></button>
+                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-bookmark" tooltip-placement="bottom" uib-tooltip="Bookmark" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-bookmark"></i></button>
+                    <button type="button" class="btn btn-success btn-circle action-circle-button-success" tooltip-placement="bottom" uib-tooltip="Accept Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="glyphicon glyphicon-ok"></i></button>
+                </md-card-actions>
+            </md-card>
+        </div>
+    </div> 
+    
+</section>
+<div ng-class="{'slide-in':flag.cardDetail==true, 'slide-out':flag.cardDetail==false}" class="md-whiteframe-z5 overlay-card-info"> 
+        <md-button ng-click='show=!show'>asas12 asasasasas</md-button>
+    </div> 
+

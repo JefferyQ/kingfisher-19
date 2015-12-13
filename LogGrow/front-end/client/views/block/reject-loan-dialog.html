@@ -1,0 +1,21 @@
+<md-dialog aria-label="Rejet Loan"  ng-cloak>
+  <form class="font-openSans">
+    <md-dialog-content>
+      <div class="md-dialog-content">
+        <h4>
+          Are you sure you want to remove this borrower card? 
+        </h4>
+        <i>Tip: This card will never show up on your market place once you have removed it!</i>
+      </div>
+    </md-dialog-content>
+    <md-dialog-actions layout="row">
+      <span flex></span>
+      <md-button ng-click="cancelRequest()">
+       Keep
+      </md-button>
+      <md-button ng-click="answer('useful')" style="margin-right:20px;">
+        Remove
+      </md-button>
+    </md-dialog-actions>
+  </form>
+</md-dialog>

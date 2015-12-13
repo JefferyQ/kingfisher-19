@@ -1,0 +1,357 @@
+.app > .main-container > .content-container {
+	margin-left: 0px !important;
+}
+
+.font-openSans {
+  font-family: 'Open Sans', sans-serif;
+} 
+
+.font-ptSans {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.font-bold-800 {
+  font-weight:800;
+}
+
+.font-bold-600 {
+  font-weight:600;
+}
+
+.header-btn {
+  margin-top: 10px;
+  margin-right: 10px;
+  background: #EFEFEF;
+  color: #607D8B;
+  padding: 5px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.btn {   
+    outline: none !important;
+}
+
+.card-rating {
+  float: right;
+  /*background-color: #777777;*/
+  padding: 5px;
+  /*border-radius: 5px;*/
+  color: #607D8B;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+.padding-card-action {
+  padding-bottom: 8px;
+  padding-right: 16px;
+}
+
+.margin-card-action{
+  margin-right:10px;
+}
+
+.action-circle-button-success, .action-circle-button-info, .action-circle-button-reject, .action-circle-button-bookmark {
+  background-color: #A5A5A5 !important;
+  color: #FFFFFF !important;
+  border: none !important;
+  transition:0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5;
+}
+
+.action-circle-button-success:hover {
+  background-color: #009688 !important;
+}
+
+.action-circle-button-info:hover {
+  background-color: #2196F3 !important;
+}
+
+.action-circle-button-reject:hover {
+  background-color: #F44336 !important;
+}
+
+.action-circle-button-bookmark:hover {
+  background-color: #3F51B5 !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+
+.action-circle-button:hover {
+  border:none !important;
+}
+
+.marketplace-td {
+  padding:5px !important;
+  font-size:12px !important;
+  /*font-weight:600 !important;*/
+}
+
+.page-header-lg {
+  font-size: 25px;
+  line-height: 40px;
+  color: #009688;
+  margin: 0 0;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.page {
+  padding: 5px 30px !important;
+}
+
+.md-card-hover {
+  transition:0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+}
+
+.md-card-hover:hover {
+  box-shadow: 0 3px 5px -1px rgba(0,0,0,.2),0 6px 10px 0 rgba(0,0,0,.14),0 1px 18px 0 rgba(0,0,0,.12);
+}
+
+.width-50 {
+  width: 50% !important;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5;
+}
+
+.width-100 {
+  width: 100% !important;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5;
+}
+
+/************ md-sidenav property ***********************/
+
+
+/************* md-sidenav property **********************/
+
+/************ slide-in slide-out page *******************/
+/************ slide-in slide-out page *******************/
+
+.slide-in {
+    transition:0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    right:50%;
+    min-width:50%;
+  }
+  .slide-out {
+    transition:0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    right:0%;  
+    min-width:0%;
+  }
+
+.overlay-card-info{
+  position: absolute;
+  top: 0px;
+  z-index: 4;
+  right:0px;
+  background-color: #ffffff;
+  width: 0%;
+  max-height: 100% !important;
+  height:100% !important;
+  background: #ffffff !important;opacity:1;
+}
+
+/************ slide-in slide-out page *******************/
+/************ slide-in slide-out page *******************/
+
+/**********md-dialog-action material css ****************/
+/**********md-dialog-action material css ****************/
+
+md-dialog.md-content-overflow .md-actions, md-dialog.md-content-overflow md-dialog-actions {
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+md-dialog.md-default-theme.md-content-overflow .md-actions, md-dialog.md-content-overflow .md-actions, md-dialog.md-default-theme.md-content-overflow md-dialog-actions, md-dialog.md-content-overflow md-dialog-actions {
+  border-top-color: rgba(0,0,0,0.12);
+}
+
+md-dialog .md-actions, md-dialog md-dialog-actions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  box-sizing: border-box;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  padding-right: 8px;
+  padding-left: 16px;
+  min-height: 52px;
+  overflow: hidden;
+}
+
+/**********md-dialog-action material css ****************/
+/**********md-dialog-action material css ****************/
+
+/********** md-card latest material css ****************/
+/********** md-card latest material css ****************/
+
+md-card md-card-header {
+  padding: 16px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+
+
+md-card md-card-header:first-child md-card-avatar {
+  margin-right: 12px;
+}
+md-card md-card-header md-card-avatar {
+  width: 50px;
+  height: 40px;
+}
+md-card md-card-header md-card-avatar .md-user-avatar, md-card md-card-header md-card-avatar md-icon {
+  border-radius: 50%;
+}
+md-card md-card img, md-card>:not(md-card-content) img {
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+md-card md-card-header md-card-avatar+md-card-header-text {
+  max-height: 40px;
+}
+md-card md-card-header md-card-header-text {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+md-card md-card-header md-card-avatar+md-card-header-text .md-title {
+  font-size: 16px;
+  margin-bottom:12px;
+  font-weight:600;
+}
+.md-title {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: .005em;
+}
+
+md-card md-card-header md-card-header-text .md-subhead {
+  font-size: 12px;
+  padding-top: 6px;
+  color: rgba(0,0,0,0.7);
+}
+<style>…</style>md-card.md-default-theme md-card-header md-card-header-text .md-subhead, md-card md-card-header md-card-header-text .md-subhead {
+  color: rgba(0,0,0,0.54);
+}
+.md-subhead {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .010em;
+  line-height: 24px;
+}
+
+md-card md-card-title {
+  padding: 24px 16px 16px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+md-card md-card-title md-card-title-text {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.md-headline {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+md-card md-card-title md-card-title-text:only-child .md-subhead {
+  padding-top: 12px;
+}
+md-card md-card-title md-card-title-text .md-subhead {
+  padding-top: 0;
+  font-size: 14px;
+}
+.md-subhead {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .010em;
+  line-height: 24px;
+}
+
+/********** md-card latest material css ****************/
+/********** md-card latest material css ****************/
+
+
