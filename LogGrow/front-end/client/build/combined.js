@@ -2536,7 +2536,9 @@
 	                templateUrl: 'views/block/reject-loan-dialog.html',
 	                parent: angular.element(document.body),
 	                targetEvent: ev,
-	                clickOutsideToClose:true
+	                clickOutsideToClose:true,
+                    openFrom: '#left',
+                    closeTo: angular.element(document.querySelector('#right'))
 	            })
         	};
 

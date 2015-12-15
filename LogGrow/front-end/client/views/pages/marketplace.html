@@ -4,14 +4,54 @@
     </div>
     <div class="row ui-section">
         <div ng-class="{'col-md-12':flag.cardDetail==true, 'col-md-4':flag.cardDetail==false}">
-            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlexCard('open');flag.filterDetail = true;" ng-mouseenter="options=true" ng-mouseleave="options=false">
+            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlexCard('open');flag.filterDetail = true;">
                 <md-card-header class="pa-bot0">
                   <div class="media">
                                     <a class="media-left">
                                         <img alt="" src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg" class="img-circle img64_64">
                                     </a>
                                     <div class="media-body">
-                                        <h4 class="media-heading media-head-title">Swapnil Saurav<span class="card-rating"><i class="ui-rating-success glyphicon glyphicon-star"></i> 4.5</span></h4>
+                                        <h4 class="media-heading media-head-title">Swapnil Saurav
+                                        <span class="card-rating">
+                                                    <md-menu md-position-mode="target-right target" >
+                                                            <i class="glyphicon glyphicon-option-vertical btn-menu-card" ng-click="$mdOpenMenu($event)"></i>
+                                                          <md-menu-content width="4" >
+                                                            <md-menu-item>
+                                                              <md-button ng-click="rejectLoan($event)">
+                                                                  <div layout="row">
+                                                                    <p flex>Reject</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Info</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Bookmark</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Accept</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                          </md-menu-content>
+                                                        </md-menu>
+                                        </span></h4>
+                                        <p class="media-heading-p"><i class="fa fa-star" tooltip-placement="bottom" uib-tooltip="Rating" tooltip-append-to-body="true"></i> 4.5</p>
                                         <p class="media-heading-p"><i class="fa fa-map-marker" tooltip-placement="bottom" uib-tooltip="Location" tooltip-append-to-body="true"></i> Bangalore</p>
                                         <p class="media-heading-p"><i class="fa fa-briefcase" tooltip-placement="bottom" uib-tooltip="Job" tooltip-append-to-body="true"></i> Software Developer</p>
                                     </div>
@@ -42,12 +82,411 @@
                         </table>
                     </div>
                 </md-card-content>
-                <md-card-actions layout="row" layout-align="end start" class="padding-card-action animate-if" ng-if="options==true">
-                    <button type="button" class="btn btn-danger btn-circle margin-card-action action-circle-button-reject" tooltip-placement="bottom" uib-tooltip="Reject Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();rejectLoan($event)"><i class="glyphicon glyphicon-remove"></i></button>
-                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-info" tooltip-placement="bottom" uib-tooltip="Infomation" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-info"></i></button>
-                    <button type="button" class="btn btn-info btn-circle margin-card-action action-circle-button-bookmark" tooltip-placement="bottom" uib-tooltip="Bookmark" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="fa fa-bookmark"></i></button>
-                    <button type="button" class="btn btn-success btn-circle action-circle-button-success" tooltip-placement="bottom" uib-tooltip="Accept Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();"><i class="glyphicon glyphicon-ok"></i></button>
-                </md-card-actions>
+            </md-card>
+        </div>
+        <div ng-class="{'col-md-12':flag.cardDetail==true, 'col-md-4':flag.cardDetail==false}">
+            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlexCard('open');flag.filterDetail = true;">
+                <md-card-header class="pa-bot0">
+                  <div class="media">
+                                    <a class="media-left">
+                                        <img alt="" src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg" class="img-circle img64_64">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading media-head-title">Swapnil Saurav
+                                        <span class="card-rating">
+                                                    <md-menu md-position-mode="target-right target" >
+                                                            <i class="glyphicon glyphicon-option-vertical btn-menu-card" ng-click="$mdOpenMenu($event)"></i>
+                                                          <md-menu-content width="4" >
+                                                            <md-menu-item>
+                                                              <md-button ng-click="rejectLoan($event)">
+                                                                  <div layout="row">
+                                                                    <p flex>Reject</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Info</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Bookmark</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Accept</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                          </md-menu-content>
+                                                        </md-menu>
+                                        </span></h4>
+                                        <p class="media-heading-p"><i class="fa fa-star" tooltip-placement="bottom" uib-tooltip="Rating" tooltip-append-to-body="true"></i> 4.5</p>
+                                        <p class="media-heading-p"><i class="fa fa-map-marker" tooltip-placement="bottom" uib-tooltip="Location" tooltip-append-to-body="true"></i> Bangalore</p>
+                                        <p class="media-heading-p"><i class="fa fa-briefcase" tooltip-placement="bottom" uib-tooltip="Job" tooltip-append-to-body="true"></i> Software Developer</p>
+                                    </div>
+                                </div>
+                </md-card-header>
+
+                <md-card-content class="pa-top12">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered no-margin">
+                            <tbody>
+                            <tr>
+                                <td class="marketplace-td">Loan Amount</td>
+                                <td class="marketplace-td"><i class="fa fa-inr"></i> 2,00,000</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Interest</td>
+                                <td class="marketplace-td">6 %</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Tenure</td>
+                                <td class="marketplace-td">15 months</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Purpose</td>
+                                <td class="marketplace-td">Family</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </md-card-content>
+            </md-card>
+        </div>
+        <div ng-class="{'col-md-12':flag.cardDetail==true, 'col-md-4':flag.cardDetail==false}">
+            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlexCard('open');flag.filterDetail = true;">
+                <md-card-header class="pa-bot0">
+                  <div class="media">
+                                    <a class="media-left">
+                                        <img alt="" src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg" class="img-circle img64_64">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading media-head-title">Swapnil Saurav
+                                        <span class="card-rating">
+                                                    <md-menu md-position-mode="target-right target" >
+                                                            <i class="glyphicon glyphicon-option-vertical btn-menu-card" ng-click="$mdOpenMenu($event)"></i>
+                                                          <md-menu-content width="4" >
+                                                            <md-menu-item>
+                                                              <md-button ng-click="rejectLoan($event)">
+                                                                  <div layout="row">
+                                                                    <p flex>Reject</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Info</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Bookmark</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Accept</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                          </md-menu-content>
+                                                        </md-menu>
+                                        </span></h4>
+                                        <p class="media-heading-p"><i class="fa fa-star" tooltip-placement="bottom" uib-tooltip="Rating" tooltip-append-to-body="true"></i> 4.5</p>
+                                        <p class="media-heading-p"><i class="fa fa-map-marker" tooltip-placement="bottom" uib-tooltip="Location" tooltip-append-to-body="true"></i> Bangalore</p>
+                                        <p class="media-heading-p"><i class="fa fa-briefcase" tooltip-placement="bottom" uib-tooltip="Job" tooltip-append-to-body="true"></i> Software Developer</p>
+                                    </div>
+                                </div>
+                </md-card-header>
+
+                <md-card-content class="pa-top12">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered no-margin">
+                            <tbody>
+                            <tr>
+                                <td class="marketplace-td">Loan Amount</td>
+                                <td class="marketplace-td"><i class="fa fa-inr"></i> 2,00,000</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Interest</td>
+                                <td class="marketplace-td">6 %</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Tenure</td>
+                                <td class="marketplace-td">15 months</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Purpose</td>
+                                <td class="marketplace-td">Family</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </md-card-content>
+            </md-card>
+        </div>
+        <div ng-class="{'col-md-12':flag.cardDetail==true, 'col-md-4':flag.cardDetail==false}">
+            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlexCard('open');flag.filterDetail = true;">
+                <md-card-header class="pa-bot0">
+                  <div class="media">
+                                    <a class="media-left">
+                                        <img alt="" src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg" class="img-circle img64_64">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading media-head-title">Swapnil Saurav
+                                        <span class="card-rating">
+                                                    <md-menu md-position-mode="target-right target" >
+                                                            <i class="glyphicon glyphicon-option-vertical btn-menu-card" ng-click="$mdOpenMenu($event)"></i>
+                                                          <md-menu-content width="4" >
+                                                            <md-menu-item>
+                                                              <md-button ng-click="rejectLoan($event)">
+                                                                  <div layout="row">
+                                                                    <p flex>Reject</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Info</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Bookmark</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Accept</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                          </md-menu-content>
+                                                        </md-menu>
+                                        </span></h4>
+                                        <p class="media-heading-p"><i class="fa fa-star" tooltip-placement="bottom" uib-tooltip="Rating" tooltip-append-to-body="true"></i> 4.5</p>
+                                        <p class="media-heading-p"><i class="fa fa-map-marker" tooltip-placement="bottom" uib-tooltip="Location" tooltip-append-to-body="true"></i> Bangalore</p>
+                                        <p class="media-heading-p"><i class="fa fa-briefcase" tooltip-placement="bottom" uib-tooltip="Job" tooltip-append-to-body="true"></i> Software Developer</p>
+                                    </div>
+                                </div>
+                </md-card-header>
+
+                <md-card-content class="pa-top12">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered no-margin">
+                            <tbody>
+                            <tr>
+                                <td class="marketplace-td">Loan Amount</td>
+                                <td class="marketplace-td"><i class="fa fa-inr"></i> 2,00,000</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Interest</td>
+                                <td class="marketplace-td">6 %</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Tenure</td>
+                                <td class="marketplace-td">15 months</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Purpose</td>
+                                <td class="marketplace-td">Family</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </md-card-content>
+            </md-card>
+        </div>
+        <div ng-class="{'col-md-12':flag.cardDetail==true, 'col-md-4':flag.cardDetail==false}">
+            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlexCard('open');flag.filterDetail = true;">
+                <md-card-header class="pa-bot0">
+                  <div class="media">
+                                    <a class="media-left">
+                                        <img alt="" src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg" class="img-circle img64_64">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading media-head-title">Swapnil Saurav
+                                        <span class="card-rating">
+                                                    <md-menu md-position-mode="target-right target" >
+                                                            <i class="glyphicon glyphicon-option-vertical btn-menu-card" ng-click="$mdOpenMenu($event)"></i>
+                                                          <md-menu-content width="4" >
+                                                            <md-menu-item>
+                                                              <md-button ng-click="rejectLoan($event)">
+                                                                  <div layout="row">
+                                                                    <p flex>Reject</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Info</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Bookmark</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Accept</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                          </md-menu-content>
+                                                        </md-menu>
+                                        </span></h4>
+                                        <p class="media-heading-p"><i class="fa fa-star" tooltip-placement="bottom" uib-tooltip="Rating" tooltip-append-to-body="true"></i> 4.5</p>
+                                        <p class="media-heading-p"><i class="fa fa-map-marker" tooltip-placement="bottom" uib-tooltip="Location" tooltip-append-to-body="true"></i> Bangalore</p>
+                                        <p class="media-heading-p"><i class="fa fa-briefcase" tooltip-placement="bottom" uib-tooltip="Job" tooltip-append-to-body="true"></i> Software Developer</p>
+                                    </div>
+                                </div>
+                </md-card-header>
+
+                <md-card-content class="pa-top12">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered no-margin">
+                            <tbody>
+                            <tr>
+                                <td class="marketplace-td">Loan Amount</td>
+                                <td class="marketplace-td"><i class="fa fa-inr"></i> 2,00,000</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Interest</td>
+                                <td class="marketplace-td">6 %</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Tenure</td>
+                                <td class="marketplace-td">15 months</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Purpose</td>
+                                <td class="marketplace-td">Family</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </md-card-content>
+            </md-card>
+        </div>
+        <div ng-class="{'col-md-12':flag.cardDetail==true, 'col-md-4':flag.cardDetail==false}">
+            <md-card class="cursor-pointer md-card-hover" ng-click="changeFlexCard('open');flag.filterDetail = true;">
+                <md-card-header class="pa-bot0">
+                  <div class="media">
+                                    <a class="media-left">
+                                        <img alt="" src="https://pbs.twimg.com/profile_images/3493236003/9807650ede9d554edb75b69e1f8d1dea.jpeg" class="img-circle img64_64">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading media-head-title">Swapnil Saurav
+                                        <span class="card-rating">
+                                                    <md-menu md-position-mode="target-right target" >
+                                                            <i class="glyphicon glyphicon-option-vertical btn-menu-card" ng-click="$mdOpenMenu($event)"></i>
+                                                          <md-menu-content width="4" >
+                                                            <md-menu-item>
+                                                              <md-button ng-click="rejectLoan($event)">
+                                                                  <div layout="row">
+                                                                    <p flex>Reject</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Info</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Bookmark</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                            <md-menu-item>
+                                                              <md-button ng-click="">
+                                                                  <div layout="row">
+                                                                    <p flex>Accept</p>
+                                                                    <md-icon md-menu-align-target md-svg-icon="call:portable-wifi-off" style="margin: auto 3px auto 0;"></md-icon>
+                                                                  </div>
+                                                              </md-button>
+                                                            </md-menu-item>
+                                                          </md-menu-content>
+                                                        </md-menu>
+                                        </span></h4>
+                                        <p class="media-heading-p"><i class="fa fa-star" tooltip-placement="bottom" uib-tooltip="Rating" tooltip-append-to-body="true"></i> 4.5</p>
+                                        <p class="media-heading-p"><i class="fa fa-map-marker" tooltip-placement="bottom" uib-tooltip="Location" tooltip-append-to-body="true"></i> Bangalore</p>
+                                        <p class="media-heading-p"><i class="fa fa-briefcase" tooltip-placement="bottom" uib-tooltip="Job" tooltip-append-to-body="true"></i> Software Developer</p>
+                                    </div>
+                                </div>
+                </md-card-header>
+
+                <md-card-content class="pa-top12">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered no-margin">
+                            <tbody>
+                            <tr>
+                                <td class="marketplace-td">Loan Amount</td>
+                                <td class="marketplace-td"><i class="fa fa-inr"></i> 2,00,000</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Interest</td>
+                                <td class="marketplace-td">6 %</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Tenure</td>
+                                <td class="marketplace-td">15 months</td>
+                            </tr>
+                            <tr>
+                                <td class="marketplace-td">Purpose</td>
+                                <td class="marketplace-td">Family</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </md-card-content>
             </md-card>
         </div>
     </div> 

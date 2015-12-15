@@ -74,9 +74,11 @@
     	</div>
     	<div class="col-md-12 pa15-top">
     		<md-card-actions layout="row" layout-align="center start" class="padding-card-action">
+                    <button class="btn-accept margin-card-action" tooltip-placement="bottom" uib-tooltip="Accept Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();rejectLoan($event)">Accept</button>
+                    <button class="btn-bookmark margin-card-action" tooltip-placement="bottom" uib-tooltip="Bookmark" tooltip-append-to-body="true" ng-click="$event.stopPropagation();rejectLoan($event)">Bookmark</button>
     				<button class="btn-reject margin-card-action" tooltip-placement="bottom" uib-tooltip="Reject Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();rejectLoan($event)">Reject</button>
-    				<button class="btn-bookmark margin-card-action" tooltip-placement="bottom" uib-tooltip="Bookmark" tooltip-append-to-body="true" ng-click="$event.stopPropagation();rejectLoan($event)">Bookmark</button>
-    				<button class="btn-accept margin-card-action" tooltip-placement="bottom" uib-tooltip="Accept Loan" tooltip-append-to-body="true" ng-click="$event.stopPropagation();rejectLoan($event)">Accept</button>
+    				
+    				
                 </md-card-actions>
     	</div>
     </div>
